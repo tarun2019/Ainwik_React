@@ -1,6 +1,8 @@
 import { Component } from "react";
+// import images -----
+import stateSyntaxImage from "../images/classConstructorSyntax.png";
 
-class Hamas extends Component {
+class StateInClassComp extends Component {
 
   constructor(){
     super();
@@ -10,7 +12,7 @@ class Hamas extends Component {
       projects: 20
     }
     // 3rd approach to bind method
-    this.changeFields = this.changeFields.bind(this);
+    // this.changeFields = this.changeFields.bind(this);
   }
 
   changeFields() {
@@ -19,16 +21,20 @@ class Hamas extends Component {
   }
 
   render() {
-    const tempStyle = {
-      color: "red",
-      boxShadow: '10px 10px 5px 0px rgba(0,0,0,0.75)',
-    }
     return(
       // below is the demo of "inline style" ---------
-      <div style={{...tempStyle, border: '1px solid'}}>
-        <h1>Temp component</h1>
-        <h6>Smallest heading tag</h6>
-        <p>Para tag</p>
+      <div>
+        <h3>State</h3>
+        <ol>
+          <li>State is the object, where you store property values that belongs to the component.</li>
+          <li>When the state object changes, the component re-renders.</li>
+          <li>Refer to the state object anywhere in the component by using the this.state.propertyname.</li>
+          <li>To change a value in the state object, use the this.setState() method.</li>
+        </ol>
+        <h3>State Syntax :</h3>
+        <img src={stateSyntaxImage} alt="stateSyntaxImage" />
+
+        
         {/* JS expressions - {} */}
         <p>Artist's name: {this.state.name}</p>
         <p>Artist's type: {this.state.type}</p>
@@ -39,10 +45,11 @@ class Hamas extends Component {
         {/* <button onClick={this.changeFields.bind(this)}>Change fields</button> */}
         {/* 3rd approach to bind method, goto constructor method */}
         {/* <button onClick={this.changeFields}>Change fields</button> */}
+        {/* change state inline, below */}
         <button onClick={() => this.setState({projects: 30})}>Change project count</button>
       </div>
     );
   }
 };
 
-export default Hamas;
+export default StateInClassComp;

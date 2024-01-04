@@ -8,14 +8,19 @@ import SidebarComp from './sidebar';
 function Layout() {
 
   const content = {
-    margin: '56px auto 40px',
-    minHeight: 'calc(100vh - 96px)',
-    padding: '12px',
-    // background: 'linear-gradient(45deg, black, transparent)'
+    margin: '56px auto 46px',
+    minHeight: 'calc(100vh - 136px)',
+    padding: '12px'
   }
   const colBasicStyle = {
-    height: 'calc(100vh - 121px)',
+    height: 'calc(100vh - 126px)',
     overflow: 'auto',
+  }
+  const compStyle = {
+    padding: '24px',
+    backgroundColor: 'linen',
+    color: 'indigo',
+    fontSize: '26px',
   }
   return (
     <div className='layout'>
@@ -25,7 +30,7 @@ function Layout() {
           <Col sm={3} style={{...colBasicStyle}}>
             <SidebarComp />
           </Col>
-          <Col sm={9} style={{...colBasicStyle}}>
+          <Col sm={9} style={{...colBasicStyle, ...compStyle}}>
             <Outlet />
           </Col>
         </Row>

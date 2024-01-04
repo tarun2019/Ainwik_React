@@ -1,31 +1,25 @@
 import React, { Component } from 'react';
 
 class Lifecycle extends Component {
-  constructor(){
-    console.log("constructor");
-    super();
-    this.state = {
-      num: 1 
-    };
-    this.updateNum = this.updateNum.bind(this);
-  }
-  componentDidUpdate() {
-    console.log("componentDidUpdate");
-  }
-  // update num ------------
-  updateNum() {
-    // this.setState({num: num + 1});
-    this.setState({num: this.state.num + 1});
-  }
 
   render() {
     console.log("render");
     return (
-      <div>
-          <h1>Render Method</h1>
-          <h3>{this.state.num}</h3>
-          <button onClick={()=> this.updateNum()}>Update</button>
-      </div>
+      <>
+        <h3>The three phases are:</h3>
+        <ul>
+          <li>
+            <b>Mounting</b> means putting elements into the DOM.</li>
+          <li>
+            <b>Updating</b>when a component is updated.
+            <br/>
+            A component is updated whenever there is a change in the component's state or props.
+          </li>
+          <li>
+            <b>Unmounting</b> when a component is removed from the DOM.
+          </li>
+        </ul>
+      </>
     );
   }
 }
