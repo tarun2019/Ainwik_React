@@ -26,7 +26,7 @@ class StateInClassComp extends Component {
       <div>
         <h3>State</h3>
         <ol>
-          <li>State is the object, where you store property values that belongs to the component.</li>
+          <li>State is the object, which stores data that belongs to the component.</li>
           <li>When the state object changes, the component re-renders.</li>
           <li>Refer to the state object anywhere in the component by using the this.state.propertyname.</li>
           <li>To change a value in the state object, use the this.setState() method.</li>

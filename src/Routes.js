@@ -33,6 +33,7 @@ import StateInClassComp from './components/StateInClassComp';
 import LifecycleMount from './components/lifecycleMount';
 import LifecycleUpdate from './components/lifecycleUpdate';
 import LifecycleUnmount from './components/lifecycleUnmount';
+import ErrorhandlingMethods from './components/lifeErrorhandling';
 
 function RoutesComp() {
   return (
@@ -56,6 +57,7 @@ function RoutesComp() {
           <Route exact path='LifecycleMount' element={<LifecycleMount/>} />
           <Route exact path='LifecycleUpdate' element={<LifecycleUpdate/>} />
           <Route exact path='LifecycleUnmount' element={<LifecycleUnmount/>} />
+          <Route exact path='ErrorhandlingMethods' element={<ErrorhandlingMethods />} />
           <Route exact path='HooksDemo' element={<HooksDemo/>} />
           <Route exact path='GetData' element={<GetData/>} />
           <Route exact path='CustomAccordian' element={<CustomAccordian/>} />

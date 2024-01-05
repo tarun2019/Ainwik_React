@@ -12,6 +12,7 @@ export default function SidebarComp() {
     'LifecycleMount',
     'LifecycleUpdate',
     'LifecycleUnmount',
+    'ErrorhandlingMethods',
     'HooksDemo',
     'GetData',
     'CustomAccordian',

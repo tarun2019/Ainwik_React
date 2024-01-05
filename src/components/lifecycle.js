@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import lifecycleImage from '../images/lifecycleDiagram.png';
 
 class Lifecycle extends Component {
 
@@ -11,7 +12,7 @@ class Lifecycle extends Component {
           <li>
             <b>Mounting</b> means putting elements into the DOM.</li>
           <li>
-            <b>Updating</b>when a component is updated.
+            <b>Updating</b> when a component is updated.
             <br/>
             A component is updated whenever there is a change in the component's state or props.
           </li>
@@ -19,6 +20,7 @@ class Lifecycle extends Component {
             <b>Unmounting</b> when a component is removed from the DOM.
           </li>
         </ul>
+        <img src={lifecycleImage} alt='lifecycleImage' width='100%'/>
       </>
     );
   }
