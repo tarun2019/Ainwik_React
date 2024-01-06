@@ -9,7 +9,7 @@ export default function SidebarComp() {
     'LifecycleMount',
     'LifecycleUpdate',
     'LifecycleUnmount',
-    '*ErrorhandlingMethods',
+    'ErrorhandlingMethods',
     'FunDeclaration',
     'ExpressionComp',
     'Arrow',

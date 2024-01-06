@@ -7,12 +7,6 @@ class ClassComponent extends Component {
   
   // component markup below that will render ---
   render() {
-    const classConstructorStyle = {
-      margin: '24px 0',
-      padding: '24px',
-      backgroundColor: 'antiquewhite',
-    }
-
     return(
       <div>
         <div>
