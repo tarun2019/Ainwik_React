@@ -5,15 +5,19 @@
 // Notice I have commented React import, as it not required for creating functional comps
 // import React from 'react';
 
-import expressionSyntaxImage from "../images/FunExpressionSyntax.png";
-import arrowCompSyntaxImage from "../images/ArrowCompSyntax.PNG";
+import declarationSyntaxImg from "../../images/FunDeclarationSyntax.png";
+import expressionSyntaxImg from '../../images/funExpSyntax.png';
+import arrowCompSyntaxImage from "../../images/ArrowCompSyntax.PNG";
 
+// 
 export default function FunDeclaration() {
   return (
     <>
       <p>The simplest way to define a component is to write a function.</p>
+      {/* Function declaration / statement ---- */}
       <h3>Function Declaration</h3>
       <ol>
+        <li>To declare a function, you use the function keyword and specify a name for the function.</li>
         <li>A function declaration is a named function.</li>
         <li>A function declaration also known as a function statement.</li>
         <li>Component created using function declaration is the standard.
@@ -21,8 +25,8 @@ export default function FunDeclaration() {
         <li>These are executed before any other code.</li>
       </ol>
       <h3>Function Declaration Syntax :</h3>
-      <img src={expressionSyntaxImage} alt="ExpressionSyntaxImage" />
-      <h2 style={{color: 'red'}}>Note: React prefers to create functional component as function expression</h2>
+      <br/><img src={declarationSyntaxImg} alt="FunDeclarationSyntax" /><br/><br/>
+      <h2 style={{color: 'red'}}>Note: React prefers to create functional component as function statement/declaration</h2>
     </>
   );
 }
@@ -41,8 +45,8 @@ const FunExpression = function() {
         <li>The function in the function expression can be accessed only after the function definition.</li>
       </ol>
       <h3>Function Expression Syntax :</h3>
-      <img src="" alt="" />
-      <h2 style={{color: 'red'}}>Note: React prefers to create functional component as function expression</h2>
+      <img src={expressionSyntaxImg} alt="funExpSyntax" />
+      <h2 style={{color: 'red'}}>Note: React prefers to create functional component as function statement/declaration</h2>
     </>
   );
 }
@@ -60,18 +64,9 @@ const ArrowFunction = () => {
         <li>Use when you want to use a callback function</li>
       </ol>
       <h3>Arrow Function Syntax :</h3>
-      <img src={arrowCompSyntaxImage} alt="arrowCompSyntax" />
-      <ChildFunction />
-      <h2 style={{color: 'red'}}>Note: React prefers to create functional component as function expression</h2>
+      <img src={arrowCompSyntaxImage} alt="ArrowCompSyntax" />
+      <h2 style={{color: 'red'}}>Note: React prefers to create functional component as function statement/declaration</h2>
     </>
-  );
-}
-
-function ChildFunction() {
-  return(
-    <h3>
-      Function can be nested 
-    </h3>
   );
 }
 

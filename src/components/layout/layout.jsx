@@ -18,8 +18,8 @@ function Layout() {
   }
   const compStyle = {
     padding: '24px',
-    backgroundColor: 'linen',
-    color: 'indigo',
+    // backgroundColor: 'linen',
+    // color: 'chocolate',
     fontSize: '26px',
   }
   return (
