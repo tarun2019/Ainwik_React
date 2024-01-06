@@ -1,5 +1,5 @@
 import React from 'react';
-import didUpdateSyntaxImg from '../images/componentDidUpdateSyntax.png';
+import didUpdateSyntaxImg from '../../images/componentDidUpdateSyntax.png';
 
 function LifecycleUpdate() {
   return (

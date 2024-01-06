@@ -15,9 +15,9 @@ import Home from './components/pages/Home';
 import LoginComp from './components/pages/login';
 
 // Sidebar menu items /links  below ---------
-import FunDeclaration, { ExpressionComp, ArrowFunction as Arrow} from './components/functionalComp';
-import ClassComponent from './components/classComponent';
-import Lifecycle from './components/lifecycle';
+import FunDeclaration, { ExpressionComp, ArrowFunction as Arrow} from './components/concepts/functionalComp';
+import ClassComponent from './components/concepts/classComponent';
+import Lifecycle from './components/concepts/lifecycle';
 import HooksDemo from './components/hooksDemo';
 import GetData from './components/getData';
 import CustomAccordian from './components/structural/accordian';
@@ -29,11 +29,11 @@ import SignUpComp from './components/pages/signupComp';
 import NotFound from './components/pages/notFound';
 import Contactus from './components/pages/contactus';
 import Aboutus from './components/pages/aboutus';
-import StateInClassComp from './components/StateInClassComp';
-import LifecycleMount from './components/lifecycleMount';
-import LifecycleUpdate from './components/lifecycleUpdate';
-import LifecycleUnmount from './components/lifecycleUnmount';
-import ErrorhandlingMethods from './components/lifeErrorhandling';
+import StateInClassComp from './components/concepts/StateInClassComp';
+import LifecycleMount from './components/concepts/lifecycleMount';
+import LifecycleUpdate from './components/concepts/lifecycleUpdate';
+import LifecycleUnmount from './components/concepts/lifecycleUnmount';
+import ErrorhandlingMethods from './components/concepts/lifeErrorhandling';
 
 function RoutesComp() {
   return (

@@ -1,6 +1,6 @@
 import { Component } from "react";
 // import images -----
-import stateSyntaxImage from "../images/classConstructorSyntax.png";
+import stateSyntaxImage from "../../images/classConstructorSyntax.png";
 
 class StateInClassComp extends Component {
 
@@ -26,10 +26,13 @@ class StateInClassComp extends Component {
       <div>
         <h3>State</h3>
         <ol>
-          <li>State is the object, which stores data that belongs to the component.</li>
-          <li>When the state object changes, the component re-renders.</li>
-          <li>Refer to the state object anywhere in the component by using the this.state.propertyname.</li>
+          <li>State is the object, which stores component's data.</li>
+          <li>Initialize state object in only constructor method.</li>
+          <li>Use/Refer to the state object anywhere in the component by using the this.state.propertyname.</li>
           <li>To change a value in the state object, use the this.setState() method.</li>
+          <li>When the state object changes, the component re-renders.</li>
+          <li>Never change state in render method, it will make re-rendering infinite.</li>
+          <li>You can and should use this.setState() in only these React lifecycle methods: componentDidMount , componentDidUpdate and componentWillReceiveProps .</li>
         </ol>
         <h3>State Syntax :</h3>
         <img src={stateSyntaxImage} alt="stateSyntaxImage" />

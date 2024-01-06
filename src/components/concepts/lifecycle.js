@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import lifecycleImage from '../images/lifecycleDiagram.png';
+import lifecycleImage from '../../images/lifecycleDiagram.png';
 
 class Lifecycle extends Component {
 

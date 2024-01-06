@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import constructorSyntaxImg from '../images/constructorSyntax.png';
-import renderSyntaxImg from '../images/renderSyntax.png';
+import constructorSyntaxImg from '../../images/constructorSyntax.png';
+import renderSyntaxImg from '../../images/renderSyntax.png';
 
 class LifecycleMount extends Component {
   render() {
-    console.log("render");
     return (
       <>
         <h3>Mounting Phase lifecycle methods :</h3>
