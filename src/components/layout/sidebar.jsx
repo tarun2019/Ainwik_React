@@ -13,6 +13,8 @@ export default function SidebarComp() {
     'FunDeclaration',
     'ExpressionComp',
     'Arrow',
+    'HooksIntro',
+    'StateHook',
     'HooksDemo',
     'GetData',
     'CustomAccordian',
