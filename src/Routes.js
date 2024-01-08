@@ -34,6 +34,11 @@ import LifecycleMount from './components/classLifecycle/lifecycleMount';
 import LifecycleUpdate from './components/classLifecycle/lifecycleUpdate';
 import LifecycleUnmount from './components/classLifecycle/lifecycleUnmount';
 import ErrorhandlingMethods from './components/classLifecycle/lifeErrorhandling';
+import HooksIntro from './components/functionHooks/hooksIntro';
+import StateHook from './components/functionHooks/stateHook';
+import PureFunction from './components/functionHooks/pureFunction';
+import EffectHook from './components/functionHooks/effectHook';
+import ContextHook from './components/functionHooks/contextHook';
 
 function RoutesComp() {
   return (
@@ -50,14 +55,19 @@ function RoutesComp() {
           {/* sidebar menu items / routes --- */}
           <Route exact path='ClassComponent' element={<ClassComponent />} />
           <Route exact path='StateInClass' element={<StateInClassComp />} />
-          <Route exact path='FunDeclaration' element={<FunDeclaration/>} />
-          <Route exact path='ExpressionComp' element={<ExpressionComp/>} />
-          <Route exact path='Arrow' element={<Arrow/>} />
           <Route exact path='Lifecycle' element={<Lifecycle/>} />
           <Route exact path='LifecycleMount' element={<LifecycleMount/>} />
           <Route exact path='LifecycleUpdate' element={<LifecycleUpdate/>} />
           <Route exact path='LifecycleUnmount' element={<LifecycleUnmount/>} />
           <Route exact path='ErrorhandlingMethods' element={<ErrorhandlingMethods />} />
+          <Route exact path='FunDeclaration' element={<FunDeclaration/>} />
+          <Route exact path='ExpressionComp' element={<ExpressionComp/>} />
+          <Route exact path='Arrow' element={<Arrow/>} />
+          <Route exact path='PureFunction' element={<PureFunction/>} />
+          <Route exact path='HooksIntro' element={<HooksIntro/>} />
+          <Route exact path='StateHook' element={<StateHook/>} />
+          <Route exact path='EffectHook' element={<EffectHook/>}/>
+          <Route exact path='ContextHook' element={<ContextHook />} />
           <Route exact path='HooksDemo' element={<HooksDemo/>} />
           <Route exact path='GetData' element={<GetData/>} />
           <Route exact path='CustomAccordian' element={<CustomAccordian/>} />

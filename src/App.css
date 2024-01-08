@@ -60,7 +60,11 @@
   margin-top: 4.5rem;
   margin-bottom: 4.5rem;
 }
-
+p { 
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.6px;
+}
 ul li {
   list-style: none;
 }
@@ -80,4 +84,22 @@ a.active {
 /* Footer style */
 footer a {
   padding: 0 4px;
+}
+.edit {
+  color: blue;
+}
+.error {
+  color: red;
+}
+.warn {
+  color: chocolate;
+}
+.success {
+  color: limegreen;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-style: bold;
 }
