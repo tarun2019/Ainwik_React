@@ -5,6 +5,7 @@ export default function HooksIntro() {
     <>
       <h3>React hooks are functions that enable functional components to use state and lifecycle features that were previously only available in class components.</h3>
       <p>Hooks were added in React 16.8</p>
+      <p>Works with ES6 and later.</p>
       <p>Hooks are prefixed with 'use'</p>
       <p>You must import Hooks from react.</p>
       <p>Hooks can only be called inside React function components.</p>
